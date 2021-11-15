@@ -9,6 +9,7 @@ font = cv2.FONT_HERSHEY_SIMPLEX
 color = (255, 0, 0)
 thickness = 1
 fontscale=1
+image_path = '/home/slayer/CV_Engg/model_top_view.png'
 
 def detect_circles(path):
     image = cv2.imread(path)
@@ -44,4 +45,4 @@ def detect_circles(path):
         print ('Circles not found in the image')
 
 if __name__ == '__main__':
-    detect_circles('/home/slayer/CV_Engg/model_top_view.png')
+    detect_circles(image_path)
